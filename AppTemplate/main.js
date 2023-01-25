@@ -25,17 +25,18 @@ var main=function(args){
 	//Or alternatively you can append custom divs made with vanilla JS:
 	var area=document.createElement('div');
 	opn.set(area.style,{
-		position:'absolute',
-		display:'block',
-		width:'100%',
-		height:'100%',
-		padding:'10px',
-		background:'linear-gradient(to bottom,blue 0%, white 100%)',
-		overflow:'hidden',
-		color: 'white',
-		fontWeight:'700',
-		fontSize:'28px',
-		fontFamily:'Arial'
+		position:"absolute",
+		display:"block",
+		boxSizing:"border-box",
+		width:"100%",
+		height:"100%",
+		padding:"10px",
+		background:"linear-gradient(to bottom,blue 0%, white 100%)",
+		overflow:"hidden",
+		color:"white",
+		fontWeight:"700",
+		fontSize:"28px",
+		fontFamily:"Arial"
 	});
 	menulayout.getContainer().div.appendChild(area);
 	area.innerHTML="Hello World!";
