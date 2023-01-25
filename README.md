@@ -4,7 +4,7 @@
 Start a web server in the folder where run.html is located. There are many different ways to do this; below we provide a few popular ways. 
 You can pick the one that fits your framework:
 
-1. Visual Studio Code
+1. Visual Studio Code:
 If you use Visual Studio Code for your development, install the extension Live Server by Ritwick Dey. 
 Start a web-server by opening the project folder with Visual Studio Code, and right click on the run.html file and select Open With Live Server.
 It will start the server in port 5500.
