@@ -31,9 +31,13 @@ var main=function(args){
 			display:'block',
 			width:'100%',
 			height:'100%',
-			background:'linear-gradient(to bottom,black 0%, white 100%)',
-			overflow:'hidden'
+			background:'linear-gradient(to bottom,blue 0%, white 100%)',
+			overflow:'hidden',
+			color: 'white',
+			fontWeight:'900',
+			fontSize:'28px'
 	})
 	menulayout.getContainer().div.appendChild(area);
+	area.innerHTML="Hello World!";
 
 }
