@@ -2,7 +2,7 @@
 
 ## How to run an app locally from your computer as you develop it
 Start a web server in the folder where run.html is located. There are many different ways to do this; below we provide a few popular ways. 
-You can pick the one that fits with your framework:
+You can pick the one that fits your framework:
 
 1. Visual Studio Code
 If you use Visual Studio Code for your development, install the extension Live Server by Ritwick Dey. 
