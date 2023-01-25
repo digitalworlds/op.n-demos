@@ -10,7 +10,7 @@ var main=function(args){
 	var wind=args.app.getWindow();//gets the window object, which has many parameters, methods, and listeners
 	//for example:
 	wind.whenResized().then((wind)=>{
-		area.innerHTML="Window resized!";
+		if(area) area.innerHTML="Window resized!";
 	})
 
 	//We create a GUI menu bar with one menu item:
