@@ -51,7 +51,7 @@ var main=function(args)
 	layout.append(button_3);
 	
 	
-	layout.append(new Label("This is a button with custom appearance:"));
+	/*layout.append(new Label("This is a button with custom appearance:"));
 	
 	//In this example we call various methods in sequence; we can do that because each method returns the object itself.
 	var button_4=new Button("A button")
@@ -68,7 +68,7 @@ var main=function(args)
 			button.div.style.background="linear-gradient(45deg, black, red)";
 		}
 	});
-	layout.append(button_4);
+	layout.append(button_4);*/
 	
 	
 	layout.append(new Label("This is a button with an event listener:"));

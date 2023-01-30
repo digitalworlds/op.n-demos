@@ -23,21 +23,51 @@ var main=function(args)
 	//We add the layout to this app's window.
 	args.app.getWindow().getContent().append(layout);
 	
+	// we insert title of layout at the top
+	layout.append(new Label("This is a tabbed layout:"));
 	
-	layout.append(new Label("This is a simple tab:"));
 	
-	//We first create a button.
-	var tab_1=new Tab("Tab 1");
-	//Then we add it to our layout.
-	layout.append(tab_1);
+	//We start out by create a TabbedLayout object
+	var tabs=new TabbedLayout();
+		
+	//You can use the appendCustomStyle method to change style of the tabbed layout
+		tabs.appendCustomStyle({
+				applyStyle:function(tabs){
+					tabs.div.style.height='200px';
+				}
+			})
+		
+		
+	//Now you can add the individual tabs using the newTab method
+	tabs.newTab('Tab 1',new Label('The first tab is shown'));
+	tabs.newTab('Tab 2',new Label('This is a tab with an icon')).setIcon(an_icon);
+	tabs.newTab('',new Label('This is an icon tab')).setIcon(an_icon);
+	
+	
+	
+	//Then we add it to the layout
+	layout.append(tabs);
+	
 	
 
+	
+
+		
+	
+	
+
+
+	/*
+	// insert the title of the second tap example
 	layout.append(new Label("This is a tab with a custom appearance:"));
 
+	
+	
+	
 	//Creating another tab with a custom appearance
-	var tab_2=new Tab("Tab 2");
+	var tab_3=new Tab("Tab 3");
 
-	tab_2.appendCustomStyle(
+	tab_3.appendCustomStyle(
 		{
 			applyStyle:(tab)=>
 			{
@@ -48,7 +78,7 @@ var main=function(args)
 				tab.div.style.background="blue";
 			}
 		});
-	layout.append(tab_2);
+	layout.append(tab_3);*/
 	
 
 }

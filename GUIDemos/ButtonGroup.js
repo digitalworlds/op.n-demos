@@ -70,7 +70,7 @@ var main=function(args)
 
 
 	layout.append(new Label("\n"));
-	layout.append(new Label("This is a customized button group with a horizontal orientation:")); 
+	/*layout.append(new Label("This is a customized button group with a horizontal orientation:")); 
 
 	//Here we shift to horizontal orientation and customize the button group
 	var buttonGroup_3=new ButtonGroup({orientation:'horizontal'}); 
@@ -94,6 +94,6 @@ var main=function(args)
 		});
 	
 	
-		layout.append(buttonGroup_3);
+		layout.append(buttonGroup_3);*/
 	
 }

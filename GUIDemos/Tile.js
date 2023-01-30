@@ -53,7 +53,7 @@ var main=function(args)
 
 	/*----------------------------------------------------------------------------------------*/
 
-	layout.append(new Label("These are two customized tiles with event listeners: "));
+	layout.append(new Label("These are two tiles with event listeners: "));
 
 
 	//In this example we demonstrate how to setup a button listener. 
@@ -64,7 +64,7 @@ var main=function(args)
 
 
 
-	tile_3.appendCustomStyle(
+	/*tile_3.appendCustomStyle(
 		{
 			applyStyle:(tile)=>
 			{
@@ -73,9 +73,9 @@ var main=function(args)
 				tile.div.style.width="auto";
 				tile.div.style.background="blue";
 			}
-		});
+		});*/
 
-	tile_4.appendCustomStyle(
+	/*tile_4.appendCustomStyle(
 		{
 			applyStyle:(tile)=>
 			{
@@ -84,22 +84,28 @@ var main=function(args)
 				tile.div.style.width="auto";
 				tile.div.style.background="orange";
 				}
-			});
+			});*/
 
 
 
-
+	// the number that will be shown inside the tile once clicked
+	var times_clicked_A=0;
 
 	tile_3.whenClicked().then((tile)=>{	
 		
-		tile.setTitle("Alfred")
+		
+		times_clicked_A++;
+		tile.setTitle("Alfred " + times_clicked_A);
 		
 	})
 
+	// the number that will be shown inside the tile once clicked
+	var times_clicked_B=0;
 
 	tile_4.whenClicked().then((tile)=>{	
 		
-		tile.setTitle("George");
+		times_clicked_B++;
+		tile.setTitle("George " + times_clicked_B);
 		
 	})
 	
