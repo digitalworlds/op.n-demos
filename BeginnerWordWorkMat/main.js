@@ -290,7 +290,7 @@ var makeFloatBoxes=function(){
 	}
 }
 
-
+//This function creates a draggable div
 var addFloatingBox=function(x,y,w,h,text,area,bottom,color){
 	var s=document.createElement('div');
 	opn.set(s.style,{
@@ -392,6 +392,7 @@ var addFloatingBox=function(x,y,w,h,text,area,bottom,color){
 		})
 }
 
+//This function creates a stack of 3 overlaping boxes
 var addFloatingBox2=function(x,y,w,h,text,area,bottom,color){
 	for(var i=0;i<3;i++)
 	addFloatingBox(x,y,w,h,text,area,bottom,color);
