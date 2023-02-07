@@ -1,0 +1,24 @@
+
+<html>
+<head>
+</head>
+<body>
+<script>
+let newWindow = open('https://research.dwi.ufl.edu/dev/waidp/server/do/login.php', 'Login', 'width=350,height=350')
+newWindow.focus();
+window.addEventListener('message', (event) => {
+console.log(event);
+if(event.data=="authenticated")newWindow.close();
+});
+newWindow.onload = function() {
+ // let html = `<div style="font-size:30px">Welcome!</div>`;
+ // newWindow.document.body.insertAdjacentHTML('afterbegin', html);
+};
+var test=function(a){
+console.log(a);
+}
+</script>
+
+
+</body>
+</html>
