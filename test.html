@@ -5,7 +5,6 @@
 <body>
 <script>
 let newWindow = open('https://research.dwi.ufl.edu/dev/waidp/server/do/login.php', 'Login', 'width=350,height=350')
-newWindow.focus();
 window.addEventListener('message', (event) => {
 console.log(event);
 if(event.data=="authenticated")newWindow.close();
