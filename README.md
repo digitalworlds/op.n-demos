@@ -23,4 +23,4 @@ It will start the server in port 8000.
 
 To run a specific JS app type `?app=filename.js` at the end of the URL. 
 For example: `http://127.0.0.1:5500/run.html?app=main.js`
-A live example is available here: https://digitalworlds.github.io/op.n/AppTemplate/run.html?app=main.js
+A live example is available here: https://digitalworlds.github.io/op.n-demos/AppTemplate/run.html?app=main.js
